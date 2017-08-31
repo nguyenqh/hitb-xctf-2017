@@ -1,0 +1,13 @@
+uuid0 = '\x17*s\x8fvKE\xc7\xa92_\xce!_?\xf7'
+uuid1 = '\xaf\xf9\xe6&q\x96E%\xb23J\xaa\xb0k\x17\xd8'
+uuid2 = '.\xa2\x9ac\x15\xd0M"\x85\x81\xab\xc8\x8c8u\x9b'
+uuid3 = '\xc5\xc7\x7f\x980\x87G\x85\x8dr\xf1\x0f$oL\xe2'
+
+uuid = uuid0 + uuid1 + uuid2 + uuid3
+
+u = bytearray()
+u.extend(uuid)
+
+import binascii
+
+print binascii.hexlify(u)
